@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPayCreater1.0.0</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <style>
+        body{
+            text-align: center; /* テキストを中央に配置 */
+        }
+        .taskBox{
+            border: 2px solid black;
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 5 / 3;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .taskBox video{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <div class="title">
+        <h1>誰かのPayPayを強奪し隊！！</h1>
+    </div>
+    <div class="startButton" id="Start">
+        <button onclick="GenerateLinks()">始める</button>
+    </div>
+    <div class="taskBox">
+        <!-- 動画の表示 -->
+        <video autoplay muted>
+            <source src="ハズレ演出.mov" type="video/mp4">
+            <!-- 他のフォーマットもサポートする場合 -->
+            <!-- サポートされていない場合のメッセージ -->
+            お使いのブラウザは動画の再生に対応していません。
+        </video>
+    </div>
+</body>
+</html>
